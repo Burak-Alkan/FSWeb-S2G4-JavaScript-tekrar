@@ -1,7 +1,7 @@
 /* Aşağıda global olarak tanımlanmış değişkenler bulunmaktadır, bunları değiştirmeyiniz. Açıklamaları takip ederek görevleri tamamlayın. */
 
 const pi = 3.14159;
-
+//deneme kayıt
 const sayilar = [
   45, 856, 12.5, 63, 0.02, 154, 2, 54, 78, 61.7, 654, 26, 12.5, 63, 969, 152,
   32, 31, 14, 74, 32, 365.9, 5.2, 45, 76, 20, 27.4, 562, 12.15, 365.85, 45.87,
@@ -118,7 +118,7 @@ for (let i = 1; < sayilar.length; i++) {
 console.log(enkucuk);
 console.log(enbuyuk);
 
-// 3b çözümü:
+// 3b çözümü:a
 
 const ucetambolunenler = [];
 sayilar.forEach((sayi) => {
