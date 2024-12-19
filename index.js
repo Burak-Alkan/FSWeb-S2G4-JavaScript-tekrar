@@ -28,6 +28,7 @@ const sayilar = [
   845, 650, 470.6, 464.5, 423.2, 730.8, 923, 239.5, 358.6, 339.1, 507, 667.7,
   867.7,
 ];
+
 /* ÖRNEK GÖREV: KareninAlani fonksiyonunu kullanarak aşağıdakileri uygulayın: 
 	1. Karenin kenar uzunluğunu fonksiyonun tek parametresi olarak alacak 
 	2. Karenin alanını hesaplayacak (💡 İPUCU: karenin alanı = karenin kenar uzunluğunun karesi)
@@ -35,14 +36,11 @@ const sayilar = [
 */
 
 //Örneğin çözümü:
-  function KareninAlani(kenaruzunlugu) {
-    return kenaruzunlugu * kenaruzunlugu;
+function KareninAlani(kenaruzunlugu) {
+  return kenaruzunlugu * kenaruzunlugu;
 }
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-
-const sonuc = KareninAlani(10);
-console.log(10);
 
 /* GÖREV 1:  
 - CemberinCevresi fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
@@ -52,12 +50,9 @@ console.log(10);
 	4. Hesaplanan çemberin çevresi döndürülecektir.
 */
 
-  function CemberinCevresi(yaricap) {
-    return 2 * pi * yaricap;
-  }
-
-  const cevre = CemberinCevresi(5);
-  console.log("Yarıçapı 5 olan çember:", cevre);
+function CemberinCevresi(/* kodlar buraya */) {
+  /* kodlar buraya */
+}
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -67,15 +62,11 @@ console.log(10);
 	2. Global değişken olarak verilmiş pi sayısını fonksiyonun İKİNCİ parametresi olacak alacaktır.
 	3. Çemberin alanı hesaplanacaktır (💡 İPUCU: Çemberin alanı = pi * yarıçapın karesi, yarıçapın karesini bulmak için Javascript içinde tanımlı Math kütüphanesini kullanabilirsiniz. Math.pow(yaricap,2))
 	4. Hesaplanan çemberin alanı döndürülecektir.
-*/ 
-function CemberinAlani(yaricap, piDegeri) {
-  return piDegeri * Math.pow(yaricap, 2);
+*/
+
+function CemberinAlani(/* kodlar buraya */) {
+  /* kodlar buraya */
 }
-
-
-  const alan = CemberinAlani(15, pi);
-  console.log("Yarıçapı 15 olan çember:", alan);
-
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -98,65 +89,38 @@ function CemberinAlani(yaricap, piDegeri) {
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-let  ucetambolunenler = [];
-let  enkucuk = sayilar[0];
-let  enbuyuk = sayilar[0];
-let  ucebolunenlerintoplami;
-let  besyuzdenkucuksayilar;
-let  siralisayilar;
-let  tekraredensayilar = {};
+let ucetambolunenler,
+  enkucuk,
+  enbuyuk,
+  ucebolunenlerintoplami,
+  besyuzdenkucuksayilar,
+  siralisayilar,
+  tekraredensayilar;
 
 // 3a çözümü
 
-let enbuyuk = sayilar[0];
-let enkucuk = sayilar[0];
-for (let i = 1; < sayilar.length; i++) {
-  if (sayilar[i] > enbuyuk) enbuyuk = sayilar[i];
-  if (sayilar[i] < enkucuk) enkucuk = sayilar[i];
-}
-
-console.log(enkucuk);
-console.log(enbuyuk);
+/* kodlar buraya */
 
 // 3b çözümü:a
 
-const ucetambolunenler = [];
-sayilar.forEach((sayi) => {
-  if (sayi % 3 === 0) ucetambolunenler.push(sayi);
-});
-
-console.log(ucetambolunenler);
+/* kodlar buraya */
 
 // 3c çözümü:
 
-const ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi, 0);
-console.log(ucebolunenlerintoplami);
+/* kodlar buraya */
 
 // 3d çözümü
 
-const besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
-console.log(siralisayilar);
+/* kodlar buraya */
 
 // 3e çözümü
 
-const siralisayilar = [...besyuzdenkucuksayilar].sort((a, b) => a - b);
-console.log(siralisayilar);
+/* kodlar buraya */
 
 // 3f çözümü
 
-const tekraredensayilar = {};
-sayilar.forEach((sayi) => {
-  tekraredensayilar[sayi] = (tekraredensayilar[sayi] || 0) + 1;
-});
+/* kodlar buraya */
 
-const tekraredensayilar = [];
-for (const [sayi, tekrar] of Object.entries(tekraredensayilar)) {
-  if (tekrar > 1) {
-    tekraredensayilar.push(`${sayi} sayısı ${tekrar} kere tekrar edilmiştir`);
-  }
-}
-
-console.log("Tekrar eden sayılar:", tekraredensayilar);
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
 function sa() {
